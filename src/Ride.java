@@ -18,16 +18,16 @@ public class Ride {
     }
 
 }
-class start
-{
-    public static void main(String[] args)
-    {
-        //here is create a object;
-        Ride R1 = new Ride("IPEC" , "HazratNizamuddeen" , 12);
-        R1.startRide();
-        Ride R2 = new Ride("IPEC" , "Vaishali" , 2);
-        R2.startRide();
-        Ride R3 = new Ride("IPEC" , "KashmeriGate" , 20);
-        R3.startRide();
-    }
-}
+//class start
+//{
+//    public static void main(String[] args)
+//    {
+//        //here is create a object;
+//        Ride R1 = new Ride("IPEC" , "HazratNizamuddeen" , 12);
+//        R1.startRide();
+//        Ride R2 = new Ride("IPEC" , "Vaishali" , 2);
+//        R2.startRide();
+//        Ride R3 = new Ride("IPEC" , "KashmeriGate" , 20);
+//        R3.startRide();
+//    }
+//}
