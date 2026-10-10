@@ -1,5 +1,9 @@
 public class UserWallet {
     private double balance;
+    public UserWallet(double initialBalance)
+    {
+        this.balance = initialBalance;
+    }
 
     //getter read only access;
     public double getBalance()
