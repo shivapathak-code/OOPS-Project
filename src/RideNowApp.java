@@ -40,14 +40,14 @@ public class RideNowApp {
                 // 3. Calculate Fare (Polymorphism)
                 PremiumPricing pricing = new PremiumPricing();
                 double fare = pricing.calculateFare(25.0, 20.0); // 10km with a ₹2 discount
-                System.out.println("Total fare for the ride: ₹" + fare);
+                System.out.println("Total fare for the ride: ₹ " + fare);
 
                 // 4. Process Payment (Abstraction)
                 if (jay.getWallet().deductMoney(fare)) {
                     // Using interface reference to hold an object
                     PaymentProcessor paymentMethod = new CreditCardPayment("4111222233334444");
                     paymentMethod.processPayment(fare);
-                    System.out.println("Ride completed successfully! Remaining wallet balance: ₹" + jay.getWallet().getBalance());
+                    System.out.println("Ride completed successfully! Remaining wallet balance: ₹ " + jay.getWallet().getBalance());
                 } else {
                     System.out.println("Insufficient funds in wallet.");
                 }
@@ -68,7 +68,7 @@ public class RideNowApp {
                     // Using interface reference to hold an object
                     PaymentProcessor paymentMethod = new UpiPayment("nancy@paytm");
                     paymentMethod.processPayment(fareNancy);
-                    System.out.println("Ride completed successfully! Remaining wallet balance: ₹" + nancy.getWallet().getBalance());
+                    System.out.println("Ride completed successfully! Remaining wallet balance: ₹ " + nancy.getWallet().getBalance());
                 } else {
                     System.out.println("Insufficient funds in wallet.");
                 }
